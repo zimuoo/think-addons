@@ -16,7 +16,7 @@
  *    ___)( )(___               |-----------------------------------------
  *   (((__) (__)))              | 高山仰止,景行行止.虽不能至,心向往之。
  * +----------------------------------------------------------------------
- * | Copyright (c) 2019 http://www.zzstudio.net All rights reserved.
+ * | Copyright (c) 2019 http://www.zimuoo.net All rights reserved.
  * +----------------------------------------------------------------------
  */
 
@@ -41,7 +41,7 @@ class SendConfig extends Command
     public function execute(Input $input, Output $output)
     {
         //获取默认配置文件
-        $content = file_get_contents(root_path() . 'vendor/zzstudio/think-addons/src/config.php');
+        $content = file_get_contents(root_path() . 'vendor/zimuoo/think-addons/src/config.php');
 
         $configPath = config_path() . '/';
         $configFile = $configPath . 'addons.php';
