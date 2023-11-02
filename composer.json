@@ -1,0 +1,16 @@
+{
+    "name": "zimuoo/think-addons",
+    "description": "php8.0和TP8.0使用的addons",
+    "autoload": {
+        "psr-4": {
+            "Zimuoo\\ThinkAddons\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yijun",
+            "email": "296528828@qq.com"
+        }
+    ],
+    "require": {}
+}
