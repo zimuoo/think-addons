@@ -3,7 +3,7 @@
     "description": "php8.0和TP8.0使用的addons",
     "autoload": {
         "psr-4": {
-            "think\\": "src/"
+            "zimuoo\\": "src/"
         },
         "files": [
             "src/helper.php"
@@ -19,6 +19,22 @@
         "php": ">=8.0.0",
         "topthink/framework": "^8.0",
         "topthink/think-view": "^2.0",
-        "topthink/think-helper": "^3.0.0"
+        "topthink/think-helper": "^3.0.0",
+        "symfony/var-exporter": "^6.0"
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "zimuoo\\addons\\Service"
+            ],
+            "config":{
+                "addons": "src/config.php"
+            }
+        }
+    },
+    "scripts" : {
+        "post-install-cmd": [
+            "php think addons:config"
+        ]
     }
 }
